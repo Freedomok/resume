@@ -9,7 +9,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css ">
-        <script src="js/script.js"></script>
+        <script>
+            var password = "hyi";
+
+            function checkPassword() {
+                var input = document.getElementById("password").value;
+                if (input == password) {
+                    document.getElementById("content").style.display = "block";
+                    document.getElementById("error-message").style.display = "none";
+                } else {
+                    document.getElementById("content").style.display = "none";
+                    document.getElementById("error-message").style.display = "block";
+                }
+            }
+        </script>
 </head>
 <body>
     <!--Main container-->
